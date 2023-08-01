@@ -1,0 +1,9 @@
+
+rootProject.name = 'iroha-java-example'
+include 'src:test:java'
+findProject(':src:test:java')?.name = 'java'
+include 'src:test:java:jp.co.soramitsu.iroha2'
+findProject(':src:test:java:jp.co.soramitsu.iroha2')?.name = 'jp.co.soramitsu.iroha2'
+include 'src:test:java'
+findProject(':src:test:java')?.name = 'java'
+
